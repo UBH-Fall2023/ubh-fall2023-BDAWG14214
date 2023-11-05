@@ -1,4 +1,9 @@
+import sys
 import random as rnd
+'''
+Wordle
+Bugs: Duplicate letters (ex. blood)
+'''
 def getGuess(num):
     guess = input('Insert Guess #' + str(num + 1) + '/6: ')
     while not(len(guess)==5):
